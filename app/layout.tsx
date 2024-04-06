@@ -1,8 +1,10 @@
 import React from "react";
+
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { UIProvider } from "./component/UiProvider";
+import Header from "./component/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,22 +20,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header>
-          <ul className="flex h-12 items-center justify-around">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/skill">Skill</Link>
-            </li>
-            {/* 工事中 */}
-            {/* <li>
+      <body className={`${inter.className} h-screen`}>
+        <UIProvider>
+          <Header />
+          {/* <ul className="flex h-12 items-center justify-around">
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/skill">Skill</Link>
+              </li>
+              {/* 工事中 */}
+          {/* <li>
               <Link href="/blog/">Blog</Link>
             </li> */}
-          </ul>
-        </header>
-        {children}
+          {/* </ul>  */}
+          {children}
+        </UIProvider>
       </body>
     </html>
   );
