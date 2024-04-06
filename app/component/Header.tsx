@@ -13,7 +13,7 @@ const Header: React.FC = () => {
   const pathname = usePathname();
   return (
     <Navbar>
-      <NavbarContent className="hidden gap-4 sm:flex" justify="center">
+      <NavbarContent className="hidden gap-4 sm:flex" justify="end">
         <NavbarItem isActive={pathname === "/"}>
           <Link href="/">Home</Link>
         </NavbarItem>
