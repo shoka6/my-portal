@@ -47,7 +47,8 @@ export default function Home() {
                 メインで触ることが多く、前職から合わせて4年ほどやっていが、データフェッチライブラリ使い始めてからより面白さに気づいた。
                 <br />
                 state 管理では Redux（Toolkit）と recoil、データフェッチは RTK
-                Query と Recoil の selector の使用経験あり。
+                Query と Recoil の selector の使用経験あり。UI ライブラリは
+                Headless UI, React Area, MUI の使用経験あり。
               </p>
             </div>
             <div>
