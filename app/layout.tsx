@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { UIProvider } from "./component/UIProvider";
 import Header from "./component/Header";
+import Footer from "./component/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,19 +24,8 @@ export default function RootLayout({
       <body className={`${inter.className} h-screen`}>
         <UIProvider>
           <Header />
-          {/* <ul className="flex h-12 items-center justify-around">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/skill">Skill</Link>
-              </li>
-              {/* 工事中 */}
-          {/* <li>
-              <Link href="/blog/">Blog</Link>
-            </li> */}
-          {/* </ul>  */}
           {children}
+          <Footer />
         </UIProvider>
       </body>
     </html>
