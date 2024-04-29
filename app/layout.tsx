@@ -1,13 +1,9 @@
 import React from "react";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { UIProvider } from "./component/UIProvider";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Homepage",
@@ -21,12 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} h-screen`}>
-        <UIProvider>
-          <Header />
-          {children}
-          <Footer />
-        </UIProvider>
+      <body className="h-screen">
+        <Header />
+        <div className="pt-16">{children}</div>
+        <Footer />
       </body>
     </html>
   );
