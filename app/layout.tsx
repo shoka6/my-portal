@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="h-screen">
         <Header />
-        <div className="pt-16">{children}</div>
+        <main className="pt-24">{children}</main>
         <Footer />
       </body>
     </html>

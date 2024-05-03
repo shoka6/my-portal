@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Home() {
   return (
-    <span className="mx-5 flex flex-col gap-4">
-      <h1 className="text-xl">すきる</h1>
+    <span className="mx-6 flex flex-col gap-2">
+      <h1 className="mb-4 text-2xl font-bold">Skill</h1>
       <span className="flex flex-col gap-6">
         <span>
           <h2 className="text-lg">フロントエンド</h2>
