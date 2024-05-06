@@ -3,7 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./_component/Header";
-import Footer from "./_component/Footer";
+// import Footer from "./_component/Footer";
 
 export const metadata: Metadata = {
   title: "Homepage",
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className="h-screen">
         <Header />
         <main className="pt-24">{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

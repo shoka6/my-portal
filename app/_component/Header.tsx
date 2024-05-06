@@ -16,6 +16,9 @@ const Header: React.FC = () => {
             <li className="hover:text-sky-500 dark:hover:text-sky-400">
               <Link href="/skill">Skill</Link>
             </li>
+            <li className="hover:text-sky-500 dark:hover:text-sky-400">
+              <Link href="/blog">blog</Link>
+            </li>
           </ul>
         </nav>
         <a
